@@ -1,0 +1,25 @@
+{
+    "name": "language-scarpet",
+    "displayName": "language-scarpet",
+    "description": "grammar support and syntax highlights for the scarpet(.sc, language by [gnembon](https://github.com/gnembon/scarpet)) language for minecraft.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "scarpet",
+            "aliases": ["scarpet", "scarpet"],
+            "extensions": [".sc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "scarpet",
+            "scopeName": "source.scarpet",
+            "path": "./syntaxes/scarpet.tmLanguage.json"
+        }]
+    }
+}
